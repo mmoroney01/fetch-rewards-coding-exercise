@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  payer: MyString
+  points: 
+  timestamp: 2021-06-29 09:25:16
+
+two:
+  payer: MyString
+  points: 
+  timestamp: 2021-06-29 09:25:16
