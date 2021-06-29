@@ -5,7 +5,27 @@ class TransactionsController < ApplicationController
   # GET /transactions or /transactions.json
   def index
     @transactions = Transaction.all
-  end
+    @payer_points = {}
+
+    #for each separate payer
+    Transaction.distinct.pluck(:payer).each do |x|
+      point_total = 0
+
+      #get a collection of that payer's transactions
+      payers_transactions = Transaction.where(:payer => x)
+
+      #then, for each of that payer's transactions
+      payers_transactions.each do |y|
+        #increase that payer's point total by that transaction's point amount
+        point_total += y.points
+      end
+
+      #then assign key-value pairs to the @payer-points hash, where payer is key and point total is value
+      @payer_points[x] = point_total
+    end
+    
+    return @transactions, @payer_points
+   end
 
   # GET /transactions/1 or /transactions/1.json
   def show

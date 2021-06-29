@@ -25,3 +25,24 @@
     <% end %>
   </tbody>
 </table>
+<br><br>
+<h1>Balances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Payer</th>
+      <th>Points</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @payer_points.each do |payer, points| %>
+      <tr>
+        <td><%= payer %></td>
+        <td><%= points %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
