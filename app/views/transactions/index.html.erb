@@ -25,6 +25,21 @@
     <% end %>
   </tbody>
 </table>
+
+<br>
+
+<%= link_to 'New Transaction', new_transaction_path %>
+
+<br><br><br>
+
+<h1>Spend Points</h1>
+
+<form action="/spend" method="post" class="task-form">
+  <input type="integer" name="points" placeholder="points">
+  <input type="submit" value="Spend">
+</form>
+
+
 <br><br>
 <h1>Balances</h1>
 
