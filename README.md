@@ -19,7 +19,7 @@ To use this web service, you will need to install the following if you do not ha
 
 <br />
 
-To get a copy, run the following:
+To get a copy of this repository, run the following:
 `git clone https://github.com/mmoroney01/fetch-rewards-coding-exercise.git`
 
 `cd` into the repository
