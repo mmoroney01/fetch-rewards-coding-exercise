@@ -44,7 +44,7 @@ The index page http://localhost:3000/transactions (GET) returns the following:
 
 <br />
 
-The route POST http://localhost:3000/transactions creates a transaction from a JSON object. Examples can be manually added below in Postman:
+The route http://localhost:3000/transactions (POST) creates a transaction from a JSON object. Examples can be manually added below in Postman:
 
 -{ "payer": "DANNON", "points": 1000, "timestamp": "2020-11-02T14:00:00Z" }
 -{ "payer": "UNILEVER", "points": 200, "timestamp": "2020-10-31T11:00:00Z" }
@@ -54,7 +54,7 @@ The route POST http://localhost:3000/transactions creates a transaction from a J
 
 <br />
 
-The route POST http://localhost:3000/spend will spend points according to a JSON object’s point total. Points are spent in chronological order by transaction. Each point deduction creates a transaction object. 
+The route http://localhost:3000/spend (POST) will spend points according to a JSON object’s point total. Points are spent in chronological order by transaction. Each point deduction creates a transaction object. 
 
 -{ "points": 5000 }
 
