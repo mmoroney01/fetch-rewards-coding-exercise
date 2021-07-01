@@ -58,7 +58,7 @@ The route http://localhost:3000/spend (POST) will spend points according to a JS
 
 -{ "points": 5000 }<br />
 
-The spend points route returns a list of JSON objects indicating payer and points deducted.
+The spend points route returns a list of JSON objects indicating payer and points deducted, as in the example below:
 
 [    
 { "payer": "DANNON", "points": -100 },<br />
