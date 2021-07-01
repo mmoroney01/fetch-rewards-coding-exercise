@@ -3,8 +3,8 @@ This is a coding challenge submitted to Fetch Rewards.
 To use this web service, you will need to install the following if you do not have them already:
 
 **Ruby**: 
--If you are using Windows, go to https://rubyinstaller.org/downloads/ and select => Ruby+Devkit 2.7.3-1 (x64)
--If you are using Linux, run the command `sudo apt install ruby-full`
+-If you are using Windows, go to https://rubyinstaller.org/downloads/ and select => Ruby+Devkit 2.7.3-1 (x64)<br />
+-If you are using Linux, run the command `sudo apt install ruby-full`<br />
 -Ruby should be installed already if you are using Mac OS
 
 **Rails**:
