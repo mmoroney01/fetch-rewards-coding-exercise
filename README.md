@@ -28,6 +28,8 @@ run `rails db:create` to create the database
 run `rails db:migrate` to run the migration for the transaction object
 run `rails db:seed` to populate the database with example data. This is optional, manually entering calls to the add transaction route will work just as well.
 
+<br />
+
 run `rails server` and go to http://localhost:3000/transactions to see the index page
 
 It might be the case that you will get an error when connecting to localhost. To fix, run the command `bundle exec rails webpacker:install`. If it tells you there is a conflict, press `a` and enter.
