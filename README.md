@@ -17,6 +17,7 @@ To use this web service, you will need to install the following if you do not ha
 
 **(Optional, useful for testing routes) Postman**: https://www.postman.com/downloads/
 
+<br />
 
 To get a copy, run the following:
 `git clone https://github.com/mmoroney01/fetch-rewards-coding-exercise.git`
