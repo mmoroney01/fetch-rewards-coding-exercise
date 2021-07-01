@@ -62,4 +62,8 @@ Returns a list of JSON objects indicating payer and points deducted.
 
 [    { "payer": "DANNON", "points": -100 },    { "payer": "UNILEVER", "points": -200 },    { "payer": "MILLER COORS", "points": -4,700 }]
 
+<br />
+
 Total point balances for payers are updated accordingly, and returning to the index page reflects this.
+
+Thank you for your evaluation!
