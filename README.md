@@ -34,12 +34,15 @@ run `rails server` and go to http://localhost:3000/transactions to see the index
 
 It might be the case that you will get an error when connecting to localhost. To fix, run the command `bundle exec rails webpacker:install`. If it tells you there is a conflict, press `a` and enter.
 
+<br />
 
 The index page http://localhost:3000/transactions (GET) returns the following:
 -a list of all transactions' payer names, points, and timestamps in reverse chronological order, along with options to read, update, or delete a specific transaction.
 -a link to a page where you may manually add the payer, points, and timestamp to create a transaction
 -a form to spend a number of points
 -a list of payers and their total point balances
+
+<br />
 
 The route POST http://localhost:3000/transactions creates a transaction from a JSON object. Examples can be manually added below in Postman:
 
@@ -48,7 +51,9 @@ The route POST http://localhost:3000/transactions creates a transaction from a J
 -{ "payer": "DANNON", "points": -200, "timestamp": "2020-10-31T15:00:00Z" }
 -{ "payer": "MILLER COORS", "points": 10000, "timestamp": "2020-11-01T14:00:00Z" }
 -{ "payer": "DANNON", "points": 300, "timestamp": "2020-10-31T10:00:00Z" 
- 
+
+<br />
+
 The route POST http://localhost:3000/spend will spend points according to a JSON object’s point total. Points are spent in chronological order by transaction. Each point deduction creates a transaction object. 
 
 -{ "points": 5000 }
