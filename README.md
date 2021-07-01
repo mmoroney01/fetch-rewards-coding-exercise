@@ -2,34 +2,34 @@ This is a coding challenge submitted to Fetch Rewards.
 
 To use this web service, you will need to install the following if you do not have them already:
 
-Ruby: 
+**Ruby**: 
 -If you are using Windows, go to https://rubyinstaller.org/downloads/ and select => Ruby+Devkit 2.7.3-1 (x64)
--If you are using Linux, run the command sudo apt install ruby-full
+-If you are using Linux, run the command `sudo apt install ruby-full`
 -Ruby should be installed already if you are using Mac OS
 
-Rails:
--If you are using Windows or Mac OS, run the command gem install rails
--If you are using Linux, run the command install rails
+**Rails**:
+-If you are using Windows or Mac OS, run the command `gem install rails`
+-If you are using Linux, run the command `install rails`
 
-Node: Go to https://nodejs.org/en/download/ and download the appropriate installer
+**Node**: Go to https://nodejs.org/en/download/ and download the appropriate installer
 
-Yarn: After installing Node, run the command npm install --global yarn
+**Yarn**: After installing Node, run the command `npm install --global yarn`
 
-(Optional, useful for testing routes) Postman: https://www.postman.com/downloads/
+**(Optional, useful for testing routes) Postman**: https://www.postman.com/downloads/
 
 
 To get a copy, run the following:
-git clone https://github.com/mmoroney01/fetch-rewards-coding-exercise.git
+`git clone https://github.com/mmoroney01/fetch-rewards-coding-exercise.git`
 
-cd into the repository
+`cd` into the repository
 
-run rails db:create to create the database
-run rails db:migrate to run the migration for the transaction object
-run rails db:seed to populate the database with example data. This is optional, manually entering calls to the add transaction route will work just as well.
+run `rails db:create` to create the database
+run `rails db:migrate` to run the migration for the transaction object
+run `rails db:seed` to populate the database with example data. This is optional, manually entering calls to the add transaction route will work just as well.
 
-run rails server and go to http://localhost:3000/transactions to see the index page
+run `rails server` and go to http://localhost:3000/transactions to see the index page
 
-It might be the case that you will get an error when connecting to localhost. To fix, run the command bundle exec rails webpacker:install. If it tells you there is a conflict, press a and enter.
+It might be the case that you will get an error when connecting to localhost. To fix, run the command `bundle exec rails webpacker:install`. If it tells you there is a conflict, press `a` and enter.
 
 
 The index page http://localhost:3000/transactions (GET) returns the following:
@@ -38,7 +38,7 @@ The index page http://localhost:3000/transactions (GET) returns the following:
 -a form to spend a number of points
 -a list of payers and their total point balances
 
-The route POST http://localhost:3000/transactions creates a transaction from a JSON object. Examples can be manually added below:
+The route POST http://localhost:3000/transactions creates a transaction from a JSON object. Examples can be manually added below in Postman:
 
 -{ "payer": "DANNON", "points": 1000, "timestamp": "2020-11-02T14:00:00Z" }
 -{ "payer": "UNILEVER", "points": 200, "timestamp": "2020-10-31T11:00:00Z" }
