@@ -66,4 +66,4 @@ Returns a list of JSON objects indicating payer and points deducted.
 
 Total point balances for payers are updated accordingly, and returning to the index page reflects this.
 
-Thank you for your evaluation!
+**Thank you for your evaluation!**
